@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自分成長日記</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="css/hp.css"/>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+<body>
+
+<header class="uk-navbar-container tm-navbar-container uk-sticky">
+    <nav class="uk-navbar uk-navbar-container">
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="">成長日記</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="uk-navbar-right">
+            <a class="uk-navbar-toggle" href="#">
+                <span uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary"></span>
+            </a>
+        </div>
+    </nav>
+
+    <div id="offcanvas-nav-primary" uk-offcanvas="mode: push; overlay: true; flip: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <button class="uk-offcanvas-close " type="button" uk-close></button>
+                <li class="uk-active"><a href="#">Topページ</a></li>
+                <li class="uk-parent"><a href="#">自己紹介</a></li>
+                <li class="uk-parent"><a href="#">筋肉ページ</a></li>
+                <li class="uk-parent"><a href="#">つながり</a></li>
+            </ul>
+
+        </div>
+    </div>
+</header>
+
+<main class="uk-container uk-container-small uk-position-relative">
+    <ul class="uk-breadcrumb">
+        <li><a href="">home</a></li>
+        <li><a href="">自己紹介</a></li>
+    </ul>
+    <article class="uk-comment">
+        <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-comment-avatar" src="img/ootani.png" width="80" height="80" alt="">
+            </div>
+            <div class="uk-width-expand">
+                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">大谷　優輔</a></h4>
+                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                    <li>1996/11/14</li>
+                    <li>システムエンジニア</li>
+                </ul>
+            </div>
+        </header>
+        <div class="uk-comment-body">
+            <p>１９年卒のシステムエンジニアです。</p>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <address>Copyright(C)2019 O.Y Allright Reserved.</address>
+</footer>
+
+</body>
+</html>
